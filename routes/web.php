@@ -12,5 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', "PageController@home");
-Route::get('/movies', "PageController@movies");
+Route::get('/', "PageController@home")->name('homepage');
+Route::get('/movies', "PageController@movies")->name('movies');
+Route::get('/bestmovies', "PageController@best")->name('bestmovies');
