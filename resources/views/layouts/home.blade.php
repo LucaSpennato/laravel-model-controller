@@ -13,5 +13,6 @@
 
     @yield('main-section')
 
+    
 </body>
 </html>
