@@ -4,8 +4,12 @@
 
 @section('main-section')
     <main>
-        @foreach ($movies as $movie)
-            @include('pages.movies.card', ['movie' => $movie])
-        @endforeach
+        <div class="container">
+            <div class="row mt-5 ms-5">
+                @foreach ($movies as $movie)
+                    @include('pages.movies.card', ['movie' => $movie])
+                @endforeach
+            </div>
+        </div>
     </main>
 @endsection
