@@ -4,8 +4,8 @@
 
 @section('main-section')
     <main>
-        <div>
-            <h1>Welcome to Movie.Lara!</h1>
+        <div class="container text-center">
+            <h1 class="mt-5">Welcome to Movie.Lara!</h1>
         </div>
     </main>
 @endsection
