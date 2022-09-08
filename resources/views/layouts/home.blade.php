@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <title> Movie.Lara | @yield('title')</title>
 </head>
 <body>
     
-    @foreach ($movies as $movie)
-        <ul>
-            <li>
-                <h3>Movie title: {{ $movie->title }}</h3>
-            </li>
-            <li>
-                Original title: {{ $movie->original_title }} 
-            </li>
-            <li>
-                Release date: {{ $movie->date }}
-            </li>
-            <li>
-                Movie score: {{ $movie->vote }}
-            </li>
-        </ul>
-    @endforeach
+    @include('includes.header')
+
+    @yield('main-section')
 
 </body>
 </html>

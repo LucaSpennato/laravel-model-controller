@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     //
-    public function index(){
+    public function prova(){
         $movies = Movie::all();
-        return view('layouts.home', compact("movies"));
+        return view('pages.movies', compact("movies"));
     }
 }
